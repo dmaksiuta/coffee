@@ -1,1 +1,6 @@
-<p>home works!</p>
+<div class="list">
+  <a [routerLink]="'/product/' + item.id" class="item" *ngFor="let item of coffeeData">
+    {{item.title}}
+    {{item.id}}
+  </a>
+</div>
